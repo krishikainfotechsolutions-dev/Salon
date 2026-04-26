@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { z } from "zod";
 import SectionHeading from "./SectionHeading";
-import { whatsappLink, PHONE_DISPLAY, WHATSAPP_NUMBER } from "@/lib/whatsapp";
-import { MapPin, Phone, MessageCircle, Mail } from "lucide-react";
+import { whatsappLink, PHONE_DISPLAY, WHATSAPP_NUMBER, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/whatsapp";
+import { MapPin, Phone, MessageCircle, Instagram } from "lucide-react";
 import { toast } from "sonner";
 
 const schema = z.object({
@@ -83,15 +83,15 @@ const Contact = () => {
               <ul className="mt-5 space-y-4 text-sm">
                 <li className="flex gap-3">
                   <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <span className="text-foreground">Radiance Bridal Studio,<br />2nd Floor, Linking Road, Bandra West,<br />Mumbai, Maharashtra 400050</span>
+                  <span className="text-foreground">Maheshwari Makeover,<br />Uma Charan Market, 128/98 B,<br />beside Astha Guest House, D Block,<br />Kidwai Nagar, Kanpur, UP 208011</span>
                 </li>
                 <li className="flex gap-3">
                   <Phone className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                   <a href={`tel:+${WHATSAPP_NUMBER}`} className="text-foreground hover:text-accent">{PHONE_DISPLAY}</a>
                 </li>
                 <li className="flex gap-3">
-                  <Mail className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                  <a href="mailto:hello@radiancebridal.in" className="text-foreground hover:text-accent">hello@radiancebridal.in</a>
+                  <Instagram className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                  <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-accent">{INSTAGRAM_HANDLE}</a>
                 </li>
               </ul>
             </div>
@@ -99,7 +99,7 @@ const Contact = () => {
             <div className="overflow-hidden rounded-3xl shadow-soft border border-border">
               <iframe
                 title="Studio location"
-                src="https://www.google.com/maps?q=Bandra+West+Mumbai&output=embed"
+                src="https://www.google.com/maps?q=Uma+Charan+Market+Kidwai+Nagar+Kanpur+208011&output=embed"
                 width="100%"
                 height="280"
                 loading="lazy"
