@@ -30,9 +30,9 @@ const Navbar = () => {
       <nav className="container flex h-16 items-center justify-between md:h-20">
         <a href="#top" className="flex items-baseline gap-1.5">
           <span className={`font-serif text-xl md:text-2xl tracking-tight ${scrolled ? "text-wine" : "text-ivory"}`}>
-            Radiance
+            Maheshwari
           </span>
-          <span className="text-gold-gradient font-serif italic text-base md:text-lg">Bridal</span>
+          <span className="text-gold-gradient font-serif italic text-base md:text-lg">Makeover</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-8">
