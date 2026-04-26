@@ -1,5 +1,6 @@
 import SectionHeading from "./SectionHeading";
 import { Instagram as IgIcon } from "lucide-react";
+import { INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/whatsapp";
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
@@ -13,7 +14,7 @@ const Instagram = () => (
   <section className="py-20 md:py-28 bg-ivory">
     <div className="container">
       <SectionHeading
-        eyebrow="@radiancebridalstudio"
+        eyebrow={INSTAGRAM_HANDLE}
         title={<>Follow our daily <em className="text-gold-gradient not-italic">muse</em></>}
         subtitle="Behind-the-scenes, fresh bridal looks and beauty tips — every single day."
       />
@@ -22,7 +23,7 @@ const Instagram = () => (
         {posts.map((p, i) => (
           <a
             key={i}
-            href="https://instagram.com"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             style={{ animationDelay: `${i * 60}ms` }}
@@ -43,12 +44,12 @@ const Instagram = () => (
 
       <div className="mt-10 text-center">
         <a
-          href="https://instagram.com"
+          href={INSTAGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 font-medium text-wine hover:text-accent transition-colors"
         >
-          <IgIcon className="h-5 w-5" /> @radiancebridalstudio
+          <IgIcon className="h-5 w-5" /> {INSTAGRAM_HANDLE}
         </a>
       </div>
     </div>
