@@ -196,5 +196,4 @@
     50% { transform: translateY(-4px) scale(1.04); box-shadow: 0 16px 40px -8px hsla(142,70%,35%,0.7); }
   }
   .animate-float-pulse { animation: float-pulse 2.4s ease-in-out infinite; }
-  }
 }
